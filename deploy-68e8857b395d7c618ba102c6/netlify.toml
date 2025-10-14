@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[context.production.environment]
+  VITE_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNeJh4SGDw_gO0CmCknHZ2c6qQo2hLROc_s_NLXsvDciDFt2xGkh3Mms0kXwVaayrZrhbc_nhk8__X/pub?gid=0&single=true&output=csv"
+  VITE_STATE_NAME = "South Australia"
+
+[context.deploy-preview.environment]
+  VITE_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNeJh4SGDw_gO0CmCknHZ2c6qQo2hLROc_s_NLXsvDciDFt2xGkh3Mms0kXwVaayrZrhbc_nhk8__X/pub?gid=0&single=true&output=csv"
+  VITE_STATE_NAME = "South Australia"
+
+[context.branch-deploy.environment]
+  VITE_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNeJh4SGDw_gO0CmCknHZ2c6qQo2hLROc_s_NLXsvDciDFt2xGkh3Mms0kXwVaayrZrhbc_nhk8__X/pub?gid=0&single=true&output=csv"
+  VITE_STATE_NAME = "South Australia"
+
+[context.dev.environment]
+  VITE_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNeJh4SGDw_gO0CmCknHZ2c6qQo2hLROc_s_NLXsvDciDFt2xGkh3Mms0kXwVaayrZrhbc_nhk8__X/pub?gid=0&single=true&output=csv"
+  VITE_STATE_NAME = "South Australia"
